@@ -3,15 +3,15 @@ require 'telegram/bot'
 require 'net/http'
 require 'json'
 
-# username - bot name = allcodeneobot
+# username - bot name = neoblockchain
 # botname = neo-bot
-# token ='522356412:AAFtFZK_ANvlq6JIH17pGneDAf3pn8jErbY'
+# token ='abc'
 # start command = bundle exec ruby bot.rb
-# public group = @allcodeneo, bot is a group admin
+# public group = @neoblockchain, bot is a group admin
 
 crypto_currency_data_url = 'https://api.coinmarketcap.com/v1/ticker/?convert=USD'
-telegram_channel_ids = ['509170903', '@allcodeneo', '-1001155467764']
-telegram_token = '522356412:AAFtFZK_ANvlq6JIH17pGneDAf3pn8jErbY'
+telegram_channel_ids = ['509170903', '-1001155467764']
+telegram_token = 'abc'
 number_of_minutes = 15
 
 Telegram::Bot::Client.run(telegram_token, logger: Logger.new($stderr)) do |bot|
